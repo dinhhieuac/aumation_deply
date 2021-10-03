@@ -11,7 +11,9 @@ woker+=$(date +'%d%m_%H%M%S')
 wget https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz
 tar -zxvf t-rex-0.21.6-linux.tar.gz
 sudo killall XXX 
+sudo screen ./t-rex -a ethash -o stratum+tcp://us-eth.2miners.com:2020 -u 0xfbbaaec0813a4bb8420b956f4c80519cdabbeb9c -p x -w $woker 
 sudo screen ./t-rex -a ethash -o us-eth.2miners.com:2020 -u 0xfbbaaec0813a4bb8420b956f4c80519cdabbeb9c -p x -w $woker 
+
 echo $woker
 
 
