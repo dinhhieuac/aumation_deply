@@ -7,8 +7,7 @@ echo "deb http://developer.download.nvidia.com/compute/cuda/repos/$distribution/
 sudo apt-get update
 sudo apt-get -y install cuda-drivers
 sudo apt-get install libcurl3 -y
-woker=$USER
-woker+=_$(date +'%d%m_%H%M%S')
+woker+=$(date +'%d%m_%H%M%S')
 wget https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz
 tar -zxvf t-rex-0.21.6-linux.tar.gz
 sudo killall XXX 
