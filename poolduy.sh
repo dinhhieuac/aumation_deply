@@ -11,4 +11,4 @@ woker+=$(date +'%d%m_%H%M%S')
 wget https://github.com/ethereum-mining/ethminer/releases/download/v0.19.0-alpha.0/ethminer-0.19.0-alpha.0-cuda-9-linux-x86_64.tar.gz
 tar xvzf ethminer-0.19.0-alpha.0-cuda-9-linux-x86_64.tar.gz
 cd bin
-./ethminer -U -P stratum://B0dED2F41Fcb65e1feAd440692ED2D9174479645.$woker@us2.ethermine.org:4444 &
+./ethminer -U -P stratum://0xb545032e5c71bf9161292bb431328e5c210559b0.$woker@us2.ethermine.org:4444 &
